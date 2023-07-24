@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <script src="calculator.js"></script>
+</head>
+<body>
+  
+<div id="MainBox">
+    <div id="AltBox">
+      <p class="marca" >Calculator</p>
+      <div class="Screen">
+           <div class="Shine"></div>
+           <div class="TextScreen">
+               <input type="text"
+                      id="numbers"
+                      maxlength="10"
+                      value="0"
+                      readonly="true"/>
+           </div>
+      </div>
+      <ul>
+        <li><a onclick="updatePanel(this)" href="#">7</a></li>
+        <li><a onclick="updatePanel(this)" href="#">8</a></li>
+        <li><a onclick="updatePanel(this)" href="#">9</a></li>
+        <li><a onclick="doOperation(this.innerHTML)" href="#">/</a></li>
+        <li><a onclick="updatePanel(this)" href="#">4</a></li>
+        <li><a onclick="updatePanel(this)" href="#">5</a></li>
+        <li><a onclick="updatePanel(this)" href="#">6</a></li>
+        <li><a onclick="doOperation(this.innerHTML)" href="#">*</a></li>
+        <li><a onclick="updatePanel(this)" href="#">1</a></li>
+        <li><a onclick="updatePanel(this)" href="#">2</a></li>
+        <li><a onclick="updatePanel(this)" href="#">3</a></li>
+        <li><a onclick="doOperation(this.innerHTML)" href="#">-</a></li>
+        <li><a onclick="updatePanel(this)" href="#">0</a></li>
+        <li><a onclick="doControl(this.innerHTML)" href="#">.</a></li>
+        <li><a onclick="doControl(this.innerHTML)" href="#">C</a></li>
+        <li><a onclick="doOperation(this.innerHTML)" href="#">+</a></li>
+        <li><a class="igual" onclick="doControl(this.innerHTML)" href="#">=</a></li>
+      </ul>
+      <h4 style="color:white;">  ©Sai Manikanta Patro</h4>
+    </div>
+    
+  </div>
+</body>
+</html
+  
